@@ -10,6 +10,11 @@ class BytebankApp extends StatelessWidget {
         appBar: AppBar(
           title: Text('Dashboard'),
         ),
+        body: Column(
+          children: [
+            Image.asset('images/bytebank_logo.png'),
+          ],
+        ),
       ),
     );
   }
