@@ -44,13 +44,11 @@ class Contactlist extends StatelessWidget {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-          Navigator.of(context)
-              .push(
-                MaterialPageRoute(
-                  builder: (context) => ContactsForm(),
-                ),
-              )
-              .then((newContact) => debugPrint(newContact));
+          Navigator.of(context).push(
+            MaterialPageRoute(
+              builder: (context) => ContactsForm(),
+            ),
+          );
         },
         child: Icon(Icons.add),
       ),

@@ -1,3 +1,4 @@
+import 'package:alura_projeto/database/app_database.dart';
 import 'package:alura_projeto/models/contact.dart';
 import 'package:flutter/material.dart';
 
@@ -51,8 +52,8 @@ class _ContactsFormState extends State<ContactsForm> {
                     final int accountNumber =
                         int.parse(_accountNamberController.text);
 
-                    final Contact newContact = Contact(0,name, accountNumber);
-                    Navigator.pop(context, newContact.toString());
+                    final Contact newContact = Contact(0, name, accountNumber);
+                    save(newContact).then((id) => Navigator.pop(context));
                   },
                   child: Text('Create'),
                 ),
