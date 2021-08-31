@@ -1,8 +1,4 @@
-import 'package:alura_projeto/database/app_database.dart';
-import 'package:alura_projeto/models/contact.dart';
 import 'package:alura_projeto/screens/Dashboard.dart';
-import 'package:alura_projeto/screens/contacts_form.dart';
-import 'package:alura_projeto/screens/contacts_list.dart';
 import 'package:flutter/material.dart';
 
 void main() {
