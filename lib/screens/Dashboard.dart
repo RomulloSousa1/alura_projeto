@@ -18,7 +18,7 @@ class Dashboard extends StatelessWidget {
             padding: const EdgeInsets.all(8.0),
             child: Image.asset(
               'images/bytebank_logo.png',
-              scale: 1.5,
+              scale: 1,
             ),
           ),
           Padding(
@@ -32,8 +32,8 @@ class Dashboard extends StatelessWidget {
                 },
                 child: Container(
                   padding: EdgeInsets.all(8.0),
-                  width: 130,
-                  height: 100,
+                  width: 200,
+                  height: 120,
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     crossAxisAlignment: CrossAxisAlignment.start,
